@@ -1,0 +1,81 @@
+/* Overflow-x kadang bug */
+
+body {
+    overflow-x: hidden;
+    background-color: #F1F1F1;
+}
+
+.bg-image {
+    background-image: url(../img/bgimg2.jpg);
+    overflow-x: hidden;
+    background-size: cover;
+}
+
+/* STICKY ELEMENT */
+.sticky {
+    height: 10rem;
+    width: 10rem;
+    flex-grow: 1;
+    flex-basis: 300px;
+    position: sticky;
+    top: 5rem;
+    /* center the text */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.sticky-navbar {
+    height: auto;
+    width: auto;
+    flex-grow: 1;
+    flex-basis: 300px;
+    position: sticky;
+    top: 0;
+}
+
+.sticky-right {
+    height: auto;
+    width: auto;
+    margin-right: 20px;
+    flex-grow: 1;
+    position: sticky;
+    top: 5rem;
+}
+
+.sticky-sosmed {
+    height: auto;
+    width: auto;
+    margin-right: 20px;
+    flex-grow: 1;
+    flex-basis: 300px;
+    position: sticky;
+    top: 17rem;
+
+}
+
+.spynavbar .nav-pills {
+    --bs-nav-pills-link-active-bg: rgb(207, 210, 211);
+    --bs-nav-pills-link-active-color: black;
+    --bs-nav-link-color: rgb(108, 117, 125);
+    --bs-nav-link-hover-color: black;
+}
+
+/* .socialmedia-card */
+.card {
+    --bs-card-border-width: none;
+}
+
+.card .card-footer {
+    background-color: #212529;
+    color: rgb(207, 210, 211);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.card-link:hover {
+    background-color: rgba(207, 210, 211, 0.535);
+
+}

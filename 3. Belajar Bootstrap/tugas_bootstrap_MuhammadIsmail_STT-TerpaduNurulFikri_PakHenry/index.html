@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5</title>
+    <!-- Bootstrap 5 CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="./css/mystyle.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="bg-image d-flex justify-content-center align-items-center p-5">
+                <p class="fw-bold fs-1 text-white">Cari Tahu Sekarang!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <div class="row sticky-navbar">
+        <div class="col-md-12">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5 px-4 py-2 shadow ">
+                <div class="container-fluid">
+                    <a class="navbar-brand fs-3 fw-bold" href="#">CariTS!</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarColor02">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item mx-1">
+                                <a class="nav-link" href="#">
+                                    <i class="bi bi-house"></i> Home </a>
+                            </li>
+                            <li class="nav-item mx-1">
+                                <a class="nav-link active" href="#">Articles
+                                    <span class="visually-hidden">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item mx-1">
+                                <a class="nav-link" href="#">Pricing</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="#">F.A.Q</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex mx-1">
+                            <input class="form-control me-sm-2" type="text" placeholder="Cari artikel di sini">
+                            <button class="btn btn-secondary my-2 my-sm-0" type="submit"><i
+                                    class="bi bi-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+
+    <!-- Container -->
+    <div class="container-fluid mx-3">
+
+        <!-- CONTENT -->
+        <div class="row">
+            <!-- LEFT - CONTENT -->
+            <div class="col-md-3 d-none d-lg-block sticky ">
+                <div class="row ">
+                    <div class="col sidenav">
+                        <nav id="navbar-example3"
+                            class="flex-column align-items-stretch px-2 border-end bg-white rounded py-3">
+                            <div class="spynavbar">
+                                <nav class="nav nav-pills flex-column">
+                                    <a class="nav-link" href="#item-1"><i class="bi bi-caret-right-fill"></i>
+                                        Apa Itu
+                                        Bootstrap? Pengertian, Fungsi, dan
+                                        Kelebihannya</a>
+                                    <nav class="nav nav-pills flex-column">
+                                        <a class="nav-link  ms-3 my-1" href="#item-1-1"><i
+                                                class="bi bi-caret-right"></i>
+                                            Apa
+                                            Itu Bootstrap?</a>
+                                        <a class="nav-link ms-3 my-1" href="#item-1-2"><i class="bi bi-caret-right"></i>
+                                            Fungsi Dasar Bootstrap</a>
+                                    </nav>
+                                    <a class="nav-link" href="#item-2"><i class="bi bi-caret-right-fill"></i>
+                                        Apa Kelebihan
+                                        Bootstrap?</a>
+                                    <nav class="nav nav-pills flex-column">
+                                        <a class="nav-link ms-3 my-1" href="#item-2-1"><i class="bi bi-caret-right"></i>
+                                            Mudah Digunakan</a>
+                                        <a class="nav-link ms-3 my-1" href="#item-2-2"><i class="bi bi-caret-right"></i>
+                                            Responsive Grid</a>
+                                        <a class="nav-link ms-3 my-1" href="#item-2-3"><i class="bi bi-caret-right"></i>
+                                            Kompatibel dengan Banyak Browser</a>
+                                        <a class="nav-link ms-3 my-1" href="#item-2-4"><i class="bi bi-caret-right"></i>
+                                            Bootstrap Image System</a>
+                                    </nav>
+                                    <a class="nav-link" href="#item-3"><i class="bi bi-caret-right-fill"></i>
+                                        Apa Kekurangan
+                                        Bootstrap?</a>
+                                </nav>
+                            </div>
+
+                        </nav>
+
+                        <!-- <div class="socialmedia-card">
+                            <div class="card mt-3 bg-white rounded border-end">
+                                <div class="card-body fs-4 d-flex justify-content-evenly ">
+                                    <a href="#"><i class="bi bi-facebook text-primary"></i></a>
+                                    <a href="#"><i class="bi bi-instagram text-danger"></i></a>
+                                    <a href="#"><i class="bi bi-tiktok text-secondary"></i></a>
+                                    <a href="#"><i class="bi bi-twitter text-info"></i></a>
+                                </div>
+                            </div>
+                        </div> -->
+
+
+                    </div>
+                </div>
+            </div>
+            <!-- END LEFT - CONTENT -->
+
+            <!-- MAIN - CONTENT -->
+            <!-- 
+                ISI KONTENNTA ngambil dari sini 
+                www.hostinger.co.id/tutorial/apa-itu-bootstrap?ppc_campaign=google_performance_max&gclid=CjwKCAjwsMGYBhAEEiwAGUXJaT0Yr3f6CDq4ACJz7g0wKhzP5ZNuc8Y5qsk8N7KOvWICkpQThG58gBoC9-0QAvD_BwE 
+            -->
+            <div class="col-md-6">
+
+                <div class="bg-white rounded px-3 py-1 d-flex justify-content-center align-items-center border-end">
+                    <nav aria-label="breadcrumbs">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">Articles</a></li>
+                            <li class="breadcrumb-item"><a href="#">Framework</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Bootstrap</li>
+                        </ol>
+                    </nav>
+                </div>
+
+                <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true"
+                    class="scrollspy-example-2 " tabindex="0">
+
+                    <!-- Item-1 -->
+                    <div id="item-1" class="pb-1">
+                        <h1>Apa Itu Bootstrap? Pengertian, Fungsi, dan Kelebihannya</h1>
+                        <div class="">
+                            <nav class="navbar">
+                                <p class="mb-4 fs-6 fw-bol">Aug 26, 2022 &nbsp; Ariata C. &nbsp; 7menit Dibaca</p>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="pb-5">
+                        <img src="./img/bootstrap-img.png" class="img-fluid rounded mx-auto d-block" alt="...">
+                    </div>
+
+                    <div id="item-1-1">
+                        <h4>Apa Itu Bootstrap?</h4>
+                        <p class="text-justify">Bootstrap adalah framework web development gratis dan open-source yang
+                            dirancang untuk
+                            memudahkan proses pengembangan web responsif dan mobile-first (memprioritaskan perangkat
+                            seluler), dengan menyediakan berbagai syntax untuk desain template.
+                        </p>
+                        <p>Dengan kata lain, Bootstrap adalah tool yang akan membantu web developer membangun website
+                            lebih cepat karena mereka tidak perlu repot dengan hal-hal dasar terkait command dan fungsi.
+                            Bootstrap terdiri dari skrip berbasis HTML, CSS, dan JS untuk berbagai komponen dalam desain
+                            web.
+                        </p>
+                    </div>
+                    <div id="item-1-2">
+                        <h4>Fungsi Dasar Bootstrap</h4>
+                        <p>Tujuan utama Bootstrap adalah untuk membuat website yang responsif dan
+                            mobile-first. Jadi,
+                            semua elemen antarmuka website dipastikan bisa bekerja secara optimal di semua ukuran layar,
+                            baik desktop maupun perangkat seluler.
+                        </p>
+                        <p>
+                            Bootstrap tersedia dalam dua varian: versi yang sudah dikompilasi dan didasarkan pada source
+                            code (kode sumber). Developer yang sudah berpengalaman biasanya memilih yang kedua, karena
+                            memungkinkan mereka menyesuaikan gaya dengan proyek yang dikerjakan.
+                        </p>
+                        <p>
+                            Contohnya, versi “kode sumber” Bootstrap memungkinkan Anda mengakses port Sass. Jadi,
+                            framework ini akan membuat stylesheet khusus yang mengimpor Bootstrap sehingga Anda bisa
+                            memodifikasi dan menambahkan fungsinya sesuai kebutuhan.
+                        </p>
+                        <p>
+                            Anda juga bisa menginstal Bootstrap dengan package manager, yaitu tool yang mengelola dan
+                            memperbarui framework, library, dan aset.
+                        </p>
+                        <p>
+                            Beberapa package manager yang paling populer adalah npm, Composer, dan Bower. Npm mengelola
+                            dependensi sisi server, sementara Composer fokus pada front-end. Apabila menangani proyek
+                            berbasis PHP, Anda bisa mencoba menggunakan Bower.
+                        </p>
+                        <p>
+                            Karena popularitasnya ini, Bootstrap memiliki banyak komunitas. Para developer dan desainer
+                            web bisa menjelajahi komunitas ini untuk saling berbagi pengetahuan dan membahas versi
+                            terbaru patch Bootstrap.
+                        </p>
+                    </div>
+
+                    <!-- Item-2 -->
+                    <div id="item-2" class="pt-5 pb-3">
+                        <h1 class="pb-3">Apa Kelebihan Bootstrap?</h1>
+                        <p>
+                            Beberapa komponen antarmuka Bootstrap mencakup navigation bar, sistem grid, carousel gambar,
+                            dan tombol.
+                        </p>
+                        <p>
+                            Apabila Anda masih belum yakin apakah Bootstrap layak untuk dicoba, di bawah ini kami sudah
+                            merangkum sejumlah kelebihan Bootstrap dibandingkan dengan framework web development
+                            lainnya.
+                        </p>
+                    </div>
+                    <div id="item-2-1">
+                        <h4>Mudah Digunakan</h4>
+                        <p>Yap, kelebihan utama Bootstrap adalah kemudahannya untuk dipelajari. Khususnya karena
+                            popularitasnya, banyak tutorial dan forum online yang tersedia di internet untuk membantu
+                            Anda mulai mempelajarinya.
+                        </p>
+                        <p>Salah satu alasan Bootstrap sangat populer di kalangan developer dan desainer web adalah
+                            struktur filenya yang sederhana. File-filenya dikompilasi untuk akses yang mudah, dan hanya
+                            membutuhkan pengetahuan dasar HTML, CSS, serta JS untuk memodifikasinya.
+                        </p>
+                        <p>
+                            Anda juga bisa menggunakan tema untuk CMS populer sebagai bahan praktik saat belajar.
+                            Sebagai contoh, hampir semua tema WordPress dikembangkan menggunakan Bootstrap, yang bisa
+                            diakses oleh siapa saja, termasuk web developer pemula.
+                        </p>
+                        <p>
+                            Untuk mempercepat loading website, Bootstrap memperkecil (minify) file CSS dan JavaScript.
+                            Selain itu, Bootstrap selalu menjaga konsistensi syntax di antara berbagai website dan para
+                            developer, yang membuatnya cocok untuk proyek kolaborasi tim.
+                        </p>
+                    </div>
+                    <div id="item-2-2">
+                        <h4>Responsive Grid</h4>
+                        <p>
+                            Bootstrap hadir dengan sistem grid siap pakai, sehingga Anda tidak perlu membuatnya dari
+                            nol. Sistem grid ini terdiri dari baris dan kolom, memungkinkan Anda membuat grid baru di
+                            dalam grid yang sudah ada tanpa perlu memasukkan kueri media dalam file CSS.
+                        </p>
+                        <p>
+                            Selain itu, sistem grid Bootstrap membantu mempersingkat proses entri data. Tersedia banyak
+                            kueri media yang memungkinkan Anda menentukan breakpoint (titik henti) kustom setiap kolom
+                            berdasarkan kebutuhan Anda.
+                        </p>
+                        <p>
+                            Untuk menggunakan grid ini, Anda bisa langsung menggunakan pengaturan defaultnya. Setelah
+                            membuat grid, Anda hanya perlu menambahkan konten ke container yang ada.
+                        </p>
+                        <p>
+                            Sistem grid Bootstrap memiliki dua kelas container untuk mempermudah penanganan proyek
+                            berbasis desktop dan seluler: fixed container (.container) dan fluid container
+                            (.container-fluid).
+                        </p>
+                        <p>
+                            Kelas container pertama menyediakan container dengan lebar tetap, sedangkan yang kedua
+                            menyediakan container dengan lebar penuh yang mampu menyesuaikan proyek Anda dengan semua
+                            ukuran layar.
+                        </p>
+                    </div>
+                    <div id="item-2-3">
+                        <h4>Kompatibel dengan Banyak Browser</h4>
+                        <p>
+                            Website yang bisa diakses dari berbagai browser tentu akan membuat pengunjung betah
+                            membukanya. Bounce rate pun berkurang, dan peringkat website di hasil pencarian akan turut
+                            naik. Bootstrap memenuhi persyaratan ini melalui kompatibilitasnya dengan versi terbaru web
+                            browser utama.
+                        </p>
+                        <p>
+                            Meskipun tidak mendukung browser yang kurang populer seperti WebKit dan Gecko, website
+                            dengan Bootstrap biasanya tetap bisa berfungsi tanpa masalah. Namun, akan ada sejumlah
+                            batasan modal dan dropdown yang mungkin ditetapkan pada layar berukuran kecil.
+                        </p>
+                    </div>
+                    <div id="item-2-4">
+                        <h4>Bootstrap Image System</h4>
+                        <p>
+                            Bootstrap menangani tampilan gambar dan responsivitas menggunakan aturan HTML dan CSS yang
+                            telah ditentukan.
+                        </p>
+                        <p>
+                            Dengan menambahkan kelas .img-responsive, Anda bisa mengubah ukuran gambar secara otomatis
+                            sesuai ukuran layar pengguna. Tentu saja ini akan meningkatkan performa website Anda, karena
+                            mengurangi ukuran gambar merupakan salah satu cara optimasi website.
+                        </p>
+                        <p>
+                            Bootstrap juga menyediakan kelas tambahan seperti .img-circle dan .img-rounded, yang
+                            membantu memodifikasi bentuk gambar.
+                        </p>
+                    </div>
+                    <div id="item-3" class="pt-5 pb-3">
+                        <h1 class="pb-3">Apa Kekurangan Bootstrap?</h1>
+                        <p>
+                            Meskipun memiliki banyak kelebihan, Bootstrap juga punya keterbatasan tertentu yang tidak
+                            cocok untuk proyek tertentu.
+                        </p>
+                        <p>
+                            Karena Bootstrap memiliki gaya visual yang hampir selalu sama, Anda perlu melakukan banyak
+                            penyesuaian dan modifikasi gaya untuk membedakan satu proyek dengan yang lainnya. Kalau
+                            tidak, semua website yang dibuat dengan framework ini akan memiliki navigasi, struktur, dan
+                            komponen desain yang sama, sehingga terlihat kurang profesional.
+                        </p>
+                        <p>
+                            Selain itu, jumlah fungsi yang sangat banyak membuat ukuran file jadi membengkak. Akibatnya,
+                            waktu loading website menjadi lambat dan server cukup terbebani kalau Anda tidak cermat.
+                            Untuk menghindari masalah ini, tambahkan kelas yang Anda butuhkan saja dan gunakan versi
+                            file yang di-minify.
+                        </p>
+                        <p>
+                            Meskipun Bootstrap kompatibel dengan versi terbaru browser populer, masalah terkadang malah
+                            timbul di versi lama browser. Artinya, tampilan website Anda akan sepenuhnya bergantung pada
+                            pengguna, apakah mereka sudah memperbarui browsernya atau belum.
+                        </p>
+                        <p>
+                            Kelemahan lainnya adalah gaya Bootstrap relatif besar. Tidak menutup kemungkinan bahwa
+                            nantinya akan ada output HTML yang tidak diperlukan, sehingga membuang-buang resource CPU.
+                        </p>
+                        <p>
+                            Meskipun mudah digunakan, Bootstrap agak sulit dipelajari kalau benar-benar baru memulai.
+                            Perlu waktu untuk mempelajari kelas dan komponennya, yang mungkin cukup rumit apabila tidak
+                            memiliki skill teknis sama sekali.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- END MAIN - CONTENT -->
+
+            <!-- RIGHT - CONTENT -->
+            <div class="col-md-3">
+                <div class="card mb-3 sticky-right">
+                    <h5 class="card-header p-2">Baca juga:</h5>
+                    <a href="#">
+                        <div class="row mx-1 mt-4 mb-3 align-items-center border border-start-0 card-link">
+                            <!-- <div class="artikel1"> -->
+                            <div class="col-md-5">
+                                <img src="./img/GitHub.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md">
+                                <div class="card-body">
+                                    <h6 class="card-title">Cara menggunakan Github</h6>
+                                    <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                                </div>
+                            </div>
+                            <!-- </div> -->
+                        </div>
+                    </a>
+
+                </div>
+                <!-- <div class="card">
+                    <h5 class="card-header">Baca juga:</h5>
+                    <div class="card-body">
+                        <a href="#">
+                            <img src="./img/GitHub.jpg" class="card-img-top img-fluid rounded mx-auto d-block"
+                                alt="...">
+                            <h5 class="card-title pt-3">Cara menggunakan GitHub</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                            </p>
+                        </a>
+
+                    </div>
+                </div> -->
+
+                <div class="socialmedia-card sticky-sosmed">
+                    <div class="card mt-3 bg-white rounded border-end">
+                        <div class="card-body fs-4 d-flex justify-content-evenly ">
+                            <a href="#"><i class="bi bi-facebook text-primary"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-danger"></i></a>
+                            <a href="#"><i class="bi bi-tiktok text-secondary"></i></a>
+                            <a href="#"><i class="bi bi-twitter text-info"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- END RIGHT - CONTENT -->
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="row mt-5">
+        <div class="col-md-12">
+            <div class="card text-center">
+                <!-- <div class="card-body">
+                    <a class="navbar-brand fs-3 fw-bold" href="#">CariTahuSekarang!</a>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                </div> -->
+                <div class="card-footer text-muted">
+                    Copyright <i class="bi bi-c-circle"></i> 2022 | Muhammad Ismail #MSIB Batch3
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
